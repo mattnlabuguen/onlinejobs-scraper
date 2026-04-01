@@ -1,0 +1,21 @@
+[project]
+name = "job-scraper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "cloudscraper>=1.2.71",
+    "fastapi>=0.129.1",
+    "lxml>=6.0.2",
+    "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
+    "uvicorn>=0.41.0",
+]
+
+[dependency-groups]
+dev = [
+    "pip>=26.0.1",
+    "uv>=0.10.4",
+]
