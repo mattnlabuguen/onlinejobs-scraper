@@ -23,7 +23,7 @@ def create_session() -> requests.Session | None:
     """Create a new authenticated session."""
     session = requests.Session()
     session.headers.update(HEADERS)
-    session.timeout = 10  # Set default timeout
+    session.timeout: int = 10  # Set default timeout
 
     try:
         login_page = session.get("https://www.onlinejobs.ph/login", timeout=10)
